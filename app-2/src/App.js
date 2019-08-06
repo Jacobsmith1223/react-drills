@@ -3,16 +3,22 @@ import logo from "./logo.svg";
 import "./App.css";
 
 class App extends Component {
+  constructor(){
+    super()
+
+    this.state = {
+      arr: ['words','on','a','list']
+    }
+  }
+
+
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <div>
+        <h2>{this.state.arr[0]}</h2>
+        <h2>{this.state.arr[1]}</h2>
+        <h2>{this.state.arr[2]}</h2>
+        <h2>{this.state.arr[3]}</h2>
       </div>
     );
   }
